@@ -1,4 +1,4 @@
-package exercise_3;
+package exrcise_3;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -14,7 +14,7 @@ public class FileReaderTest {
                 string += line + " ";
                 line = bf.readLine();
             }
-            CalculateFrequency.calculateWord(string);
+            CalculateFrequency.calculateWord(string.toLowerCase());
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
